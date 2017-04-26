@@ -1,0 +1,68 @@
+PODS:
+  - Alamofire (4.3.0)
+  - AlamofireImage (3.2.0):
+    - Alamofire (~> 4.1)
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - Fabric (1.6.11)
+  - FBSDKCoreKit (4.19.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.19.0):
+    - FBSDKCoreKit
+  - IHKeyboardAvoiding (3.7)
+  - JGProgressHUD (1.4)
+  - libPhoneNumber-iOS (0.9.2)
+  - MGSwipeTableCell (1.5.6)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SendBirdSDK (3.0.36)
+  - TransitionAnimation (4.0.0):
+    - TransitionTreasury (~> 4.0)
+  - TransitionTreasury (4.0.0)
+  - TwitterCore (2.8.0):
+    - Fabric
+  - TwitterKit (2.8.0):
+    - TwitterCore (= 2.8.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - AlamofireImage
+  - Fabric
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - IHKeyboardAvoiding
+  - JGProgressHUD
+  - libPhoneNumber-iOS (~> 0.8)
+  - MGSwipeTableCell
+  - SDWebImage (~> 3.8)
+  - SendBirdSDK (~> 3.0)
+  - TransitionAnimation
+  - TransitionTreasury
+  - TwitterKit
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  FBSDKCoreKit: 894b2b6eda6a4c8c4204e92e59cc355709ef045c
+  FBSDKLoginKit: 83ca4d8f12a2022570af9fd6aacf27f6b425b99f
+  IHKeyboardAvoiding: 4c852fae85667469307678c65f14f5cac8a7be92
+  JGProgressHUD: 1617b0940cf80bb53e8f7d6f0fd69252ea45d6d4
+  libPhoneNumber-iOS: a8bffdec18c37728360f6771fe021302f1e0b497
+  MGSwipeTableCell: 616700eb0ffd1c611ba909066cb7fd739790a0a7
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SendBirdSDK: 758cea672ab036c435a2370c9c428fddb55bbe53
+  TransitionAnimation: c397b9ca41ab593b35b1e8f8673df17bae0db20a
+  TransitionTreasury: dcf3fe6e5c740525d9e7d4544af45e6fbfd71c88
+  TwitterCore: e959987be23c767004d29eb7fab8d85d8585a2e5
+  TwitterKit: f7b0a1adcb800f6446ff0ef70164797376522ff3
+
+PODFILE CHECKSUM: f9f0a89838340e8c4aaaa6a5a65f29409f9d8464
+
+COCOAPODS: 1.1.0.rc.2

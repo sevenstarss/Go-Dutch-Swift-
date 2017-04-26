@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="gdInputCell" rowHeight="86" id="fjH-x2-6MT" customClass="GDInputCell" customModule="Go_Dutch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="86"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fjH-x2-6MT" id="fXF-X5-rsv">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eOB-Ta-DZf">
+                        <rect key="frame" x="42" y="84" width="330" height="1"/>
+                        <color key="backgroundColor" red="0.89411764705882346" green="0.89411764705882346" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="A7E-I4-HtD"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LbH-rL-VK8" customClass="FloatLabelTextField" customModule="Go_Dutch" customModuleProvider="target">
+                        <rect key="frame" x="42" y="30" width="330" height="54"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="LbH-rL-VK8" secondAttribute="height" multiplier="55:9" id="cH6-Uh-VKI"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="titleTextColour">
+                                <color key="value" red="0.55686274509803924" green="0.56470588235294117" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="titleActiveTextColour">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="delegate" destination="fjH-x2-6MT" id="HBW-gg-w09"/>
+                        </connections>
+                    </view>
+                    <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rY-WT-PnR">
+                        <rect key="frame" x="347" y="59" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="HC9-h7-a6z"/>
+                            <constraint firstAttribute="width" constant="20" id="S7h-u8-lvU"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="acceptBtn"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eOB-Ta-DZf" firstAttribute="top" secondItem="3rY-WT-PnR" secondAttribute="bottom" constant="5" id="7ww-da-T3m"/>
+                    <constraint firstAttribute="bottom" secondItem="eOB-Ta-DZf" secondAttribute="bottom" id="AHw-tj-6sN"/>
+                    <constraint firstItem="eOB-Ta-DZf" firstAttribute="centerX" secondItem="fXF-X5-rsv" secondAttribute="centerX" id="BFL-aO-Ksd"/>
+                    <constraint firstItem="LbH-rL-VK8" firstAttribute="width" secondItem="fXF-X5-rsv" secondAttribute="width" multiplier="330:414" id="FeE-pp-ddx"/>
+                    <constraint firstAttribute="bottom" secondItem="LbH-rL-VK8" secondAttribute="bottom" constant="1" id="Uzk-pR-EKY"/>
+                    <constraint firstItem="eOB-Ta-DZf" firstAttribute="width" secondItem="LbH-rL-VK8" secondAttribute="width" id="cTO-9Q-gPe"/>
+                    <constraint firstItem="3rY-WT-PnR" firstAttribute="trailing" secondItem="LbH-rL-VK8" secondAttribute="trailing" constant="-5" id="hpI-T5-oh0"/>
+                    <constraint firstItem="LbH-rL-VK8" firstAttribute="centerX" secondItem="fXF-X5-rsv" secondAttribute="centerX" id="juJ-sI-DIZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn_check" destination="3rY-WT-PnR" id="l9p-eR-g7j"/>
+                <outlet property="tf_input" destination="LbH-rL-VK8" id="dsV-cV-gbu"/>
+            </connections>
+            <point key="canvasLocation" x="481" y="273.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="acceptBtn" width="20" height="20"/>
+    </resources>
+</document>
